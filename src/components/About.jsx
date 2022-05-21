@@ -1,4 +1,5 @@
 import React from 'react'
+import { BsCaretRight } from 'react-icons/bs';
 
 const About = () => {
   return (
@@ -13,16 +14,31 @@ const About = () => {
           </div>
           <div></div>
           </div>
-          <div className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4'>
-            <div className='sm:text-right text-4xl font-bold'>
-              <p>Hi. I'm Clint, nice to meet you. Please take a look around.</p>
+          <div className='max-w-[1000px] w-full grid sm:grid-cols-2 gap-8 px-4 place-items-center'>
+            <div className=''>
+              <img src="https://user-images.githubusercontent.com/32476235/169655815-8777731e-714f-4e2f-a8f3-dd9acab421d4.JPG" className='object-contain h-60 w-60 '></img>
             </div>
-            <div>
-              <p>I am passionate about building excellent software that improves
-              the lives of those around me. I specialize in creating software
-              for clients ranging from individuals and small-businesses all the
-              way to large enterprise corporations. What would you do if you had
-              a software expert available at your fingertips?</p>  
+            <div className='my-experience'>
+              <p>I am a Master of Professional Science student in health-related Information Science with experience developing systems and web application. I enjoying building things on website and loving finding insight and potential with data.
+               </p><p> My professtional experience includes:</p>
+                <p> <ul>
+                    <li className='p-2 m-1 relative'>                        
+                          Building hospital systems in an MVC environment using ASP.NET, C#.
+                       </li>
+
+                        <li className='p-2 m-1 relative'>                        
+                          Developing user interfaces with HTML/CSS/JavaScript and Kendo UI JavaScript Component Libraries for jQuery. 
+                       </li>
+
+                       <li className='p-2 m-1 relative'>                        
+                          Using Oracle/MsSQL as a database and performing SQL queries for performance and patient data transformations.
+                       </li>
+
+                        <li className='p-2 m-1 relative'>
+                            Teaching Assistant of undergrad Bootcamp of Text Mining with Python and Data Mining with R.
+                        </li>
+                </ul>
+                </p>  
             </div>
           </div>
       </div>
