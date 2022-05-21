@@ -26,7 +26,7 @@ const Navbar = () => {
                 <li><a className='text-[#b2fefd]'>ii. </a>About Me</li>
                 <li><a className='text-[#b2fefd]'>iii. </a>Skills</li>
                 <li><a className='text-[#b2fefd]'>ix. </a>Work</li>
-                <li><a className='text-[#b2fefd]'>x. </a>Blog</li>
+                <li><a className='text-[#b2fefd]'>x. </a>Project & Blog</li>
                 <li><a className='text-[#b2fefd]'>xi. </a>Contact</li>
                 <li><a className='text-[#b2fefd] group border-2 border-[#b2fefd] rounded-md px-2 py-1 flex items-center hover:bg-[#b2fefd24] hover:border-[#b2fefd]'>Resume</a></li>
             </ul>
