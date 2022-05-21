@@ -10,6 +10,7 @@ import {
 import { HiOutlineMail } from "react-icons/hi";
 import { BsFillArrowDownCircleFill } from "react-icons/bs";
 import Logo from "../assets/whitelogo.png";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -23,22 +24,34 @@ const Navbar = () => {
       {/*navbar menu*/}
       <ul className="hidden md:flex items-center">
         <li>
-          <a className="text-[#b2fefd]">i. </a>Home
+          <Link to="home" smooth={true} duration={500}>
+            <a className="text-[#b2fefd]">i. </a>Home
+          </Link>
         </li>
         <li>
-          <a className="text-[#b2fefd]">ii. </a>About Me
+          <Link to="about" smooth={true} duration={500}>
+            <a className="text-[#b2fefd]">ii. </a>About Me
+          </Link>
         </li>
         <li>
-          <a className="text-[#b2fefd]">iii. </a>Skills
+          <Link to="skills" smooth={true} duration={500}>
+            <a className="text-[#b2fefd]">iii. </a>Skill
+          </Link>
         </li>
         <li>
-          <a className="text-[#b2fefd]">ix. </a>Work
+          <Link to="work" smooth={true} duration={500}>
+            <a className="text-[#b2fefd]">ix. </a>Work
+          </Link>
         </li>
         <li>
-          <a className="text-[#b2fefd]">x. </a>Project & Blog
+          <Link to="project&blog" smooth={true} duration={500}>
+            <a className="text-[#b2fefd]">x. </a>Project & Blog
+          </Link>
         </li>
         <li>
-          <a className="text-[#b2fefd]">xi. </a>Contact
+          <Link to="contact" smooth={true} duration={500}>
+            <a className="text-[#b2fefd]">xi. </a>Contact
+          </Link>
         </li>
         <li>
           <a className="text-[#b2fefd] group border-2 border-[#b2fefd] rounded-md px-2 py-1 flex items-center hover:bg-[#b2fefd24] hover:border-[#b2fefd]">
@@ -60,12 +73,47 @@ const Navbar = () => {
             : "absolute top-0 left-0 w-full h-screen bg-[#03010E] flex flex-col justify-center items-center"
         }
       >
-        <li className="py-6 text-4xl">Home</li>
-        <li className="py-6 text-4xl">About Me</li>
-        <li className="py-6 text-4xl">Skills</li>
-        <li className="py-6 text-4xl">Work</li>
-        <li className="py-6 text-4xl">Blog</li>
-        <li className="py-6 text-4xl">Contact</li>
+        <li className="py-6 text-4xl">
+          {" "}
+          <Link onClick={handleClick} to="home" smooth={true} duration={500}>
+            <a className="text-[#b2fefd]">i. </a>Home
+          </Link>
+        </li>
+        <li className="py-6 text-4xl">
+          {" "}
+          <Link onClick={handleClick} to="about" smooth={true} duration={500}>
+            <a className="text-[#b2fefd]">ii. </a>About Me
+          </Link>
+        </li>
+        <li className="py-6 text-4xl">
+          {" "}
+          <Link onClick={handleClick} to="skills" smooth={true} duration={500}>
+            <a className="text-[#b2fefd]">iii. </a>Skill
+          </Link>
+        </li>
+        <li className="py-6 text-4xl">
+          {" "}
+          <Link onClick={handleClick} to="work" smooth={true} duration={500}>
+            <a className="text-[#b2fefd]">ix. </a>Work
+          </Link>
+        </li>
+        <li className="py-6 text-4xl">
+          {" "}
+          <Link
+            onClick={handleClick}
+            to="project&blog"
+            smooth={true}
+            duration={500}
+          >
+            <a className="text-[#b2fefd]">x. </a>Project & Blog
+          </Link>
+        </li>
+        <li className="py-6 text-4xl">
+          {" "}
+          <Link  onClick={handleClick} to="contact" smooth={true} duration={500}>
+            <a className="text-[#b2fefd]">xi. </a>Contact
+          </Link>
+        </li>
       </ul>
 
       {/*social media*/}
