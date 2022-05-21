@@ -22,4 +22,19 @@
     line-height: 12px;
     box-sizing: inherit;
   }
+
+  .work-content-div {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 250px;
+  }
+
+  .work-content-div:hover {
+    background-image: linear-gradient(
+      0.8turn,
+      rgb(149, 158, 158),
+      rgb(178, 254, 253, 100)
+    ) !important;
+  }
 }
