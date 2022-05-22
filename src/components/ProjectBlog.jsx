@@ -1,5 +1,5 @@
 import React from "react";
-import { AiOutlineFolderOpen } from "react-icons/ai";
+import { AiOutlineFolderOpen, AiFillGithub } from "react-icons/ai";
 
 const ProjectBlog = () => {
   return (
@@ -17,27 +17,37 @@ const ProjectBlog = () => {
             Here are some of my courses project and blog I work on!
           </p>
         </div>
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
+        <div className=" grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
           {/* Work 1*/}
           {/* Grid Image*/}
-          <div className="border-2 shadow-md shadow-[#E6E6E6] group container rounded-md  justify-center items-center mx-auto work-content-div">
-            <header className="">
-              <span>
-                <AiOutlineFolderOpen className="text-[#b2fefd]" size="2rem" />
-              </span>
+          <div className="h-auto border-2 shadow-md shadow-[#E6E6E6] group container rounded-md  justify-center items-center mx-auto work-content-div">
+            <header className="h-[60%] relative">
+              {/* File icon*/}
+              <ul className="flex w-[100%] items-center m-2 p-2">
+                <li className="absolute left-2 top-2">
+                  <AiOutlineFolderOpen className="text-[#b2fefd]" size="2rem" />
+                </li>
+                <li className="absolute right-2 top-2">
+                  <AiFillGithub className="text-[#b2fefd]" size="2rem" />
+                </li>
+              </ul>
 
-              <div className="project-top"> This is the icon</div>
-              <div className="project-title"> This is the place for title</div>
-              <div className="project-discription">
+              <div className="m-2 p-2">
+                <div className="project-top"> This is the icon</div>
+                <div className="project-title">
+                  {" "}
+                  This is the place for title
+                </div>
+                <div className="project-discription"></div>
                 This is the place for discription
               </div>
             </header>
-            <footer className="m-2 text-[#959e9e] p-4">
-              <ul className="flex m-0">
-                <li className="p-1 float-left">HTML</li>
-                <li className="p-1 float-left">CSS</li>
-                <li className="p-1 float-left">JavaScript</li>
-                <li className="p-1 float-left">Firebase</li>
+            <footer className="mb-2 text-[#959e9e] p-4 h-[50%] overflow-break-word">
+              <ul className="">
+                <li className="px-1 float-left">HTML</li>
+                <li className="px-1 float-left">CSS</li>
+                <li className="px-1 float-left">JavaScript</li>
+                <li className="px-1 float-left">Firebase</li>
               </ul>
             </footer>
 
