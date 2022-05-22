@@ -1,12 +1,13 @@
-import React, { useRef } from "react";
+import React, { useRef, useState, useEffect } from "react";
 import emailjs from "emailjs-com";
 
 export const Contact = () => {
+  const [status, setStatus] = useState("");
+
   const form = useRef();
 
   const sendEmail = (e) => {
     e.preventDefault();
-
     emailjs
       .sendForm(
         "service_yi8zese",
@@ -17,6 +18,7 @@ export const Contact = () => {
       .then(
         (result) => {
           console.log(result.text);
+          setStatus("SUCCESS");
         },
         (error) => {
           console.log(error.text);
@@ -24,6 +26,14 @@ export const Contact = () => {
       );
     e.target.reset();
   };
+
+  useEffect(() => {
+    if (status === "SUCCESS") {
+      setTimeout(() => {
+        setStatus("");
+      }, 3000);
+    }
+  }, [status]);
 
   return (
     <div
@@ -41,7 +51,7 @@ export const Contact = () => {
             Contact
           </p>
           <p className="text-gray-300 py-2">
-            Let's get in touch! I’m open to full-time new opportunities.
+            Let's get in touch! I’m open to full-time opportunities.
           </p>
         </div>
         <div>
@@ -74,18 +84,14 @@ export const Contact = () => {
         <div>
           <input
             type="submit"
-            className="text-[#b2fefd] group border-2 border-[#b2fefd] rounded-md px-2 py-1 flex items-center hover:bg-[#b2fefd24] hover:border-[#b2fefd] btn-message-submit"
+            className="ml-[80%] text-[#b2fefd] group border-2 border-[#b2fefd] rounded-md px-2 py-1 flex items-center hover:bg-[#b2fefd24] hover:border-[#b2fefd] btn-message-submit"
             placeholder="Message"
             name="submit"
             value="Let's Connect!"
           />
         </div>
         {/* email success message*/}
-        <div>
-          <a className="text-[#b2fefd]">
-            Thank you so much! I will get back to you asap!
-          </a>
-        </div>
+        <div>{status && renderAlert()}</div>
       </form>
     </div>
   );
@@ -140,5 +146,13 @@ const Contact = () => {
 };
 
 */
+
+const renderAlert = () => (
+  <div className="px-4 py-3 leading-normal text-blue rounded mb-5 text-center">
+    <a className="text-[#b2fefd]">
+      Thank you so much! Your message submitted successfully.
+    </a>
+  </div>
+);
 
 export default Contact;
