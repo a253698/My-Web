@@ -19,7 +19,7 @@ const Navbar = () => {
   return (
     <div className="fixed w-full h-[80px] flex justify-between items-center px-4 bg-[#03010E] text-[#e8e8e8]">
       <div>
-        <img src={Logo} alt="Logo Image" style={{ width: "50px" }} />
+        <img src={Logo} alt="Logo Image" style={{ width: "50px" }} onClick="" />
       </div>
       {/*navbar menu*/}
       <ul className="hidden md:flex items-center">
@@ -110,13 +110,13 @@ const Navbar = () => {
         </li>
         <li className="py-6 text-4xl">
           {" "}
-          <Link  onClick={handleClick} to="contact" smooth={true} duration={500}>
+          <Link onClick={handleClick} to="contact" smooth={true} duration={500}>
             <a className="text-[#b2fefd]">xi. </a>Contact
           </Link>
         </li>
       </ul>
 
-      {/*social media*/}
+      {/*social media button on the left*/}
       <div className="hidden lg:flex fixed flex-col top-[35%] left-0">
         <ul>
           <li className="w-[160px] h-[60px] flex justify-between items-center ml-[-100px] hover:ml-[-10px] duration-300 ">

@@ -80,6 +80,12 @@ export const Contact = () => {
             value="Let's Connect!"
           />
         </div>
+        {/* email success message*/}
+        <div>
+          <a className="text-[#b2fefd]">
+            Thank you so much! I will get back to you asap!
+          </a>
+        </div>
       </form>
     </div>
   );
