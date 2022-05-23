@@ -1,5 +1,6 @@
 import React from "react";
 import KHFOnlineMenu from "../assets/KHF-online-menu.png";
+import ICUNSS from "../assets/ICUNS.png";
 
 const Work = () => {
   return (
@@ -15,7 +16,7 @@ const Work = () => {
 
         {/* Container */}
         <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-4">
-          {/* Work 1*/}
+          {/* KHFOnlineMenu */}
           {/* Grid Image*/}
           <div
             style={{ backgroundImage: `url(${KHFOnlineMenu})` }}
@@ -23,8 +24,11 @@ const Work = () => {
           >
             {/* Hover Effect */}
             <div className="opacity-0 group-hover:opacity-100">
-              <span className="text-2xl font-bold text-[#E6E6E6] tracking-wider">
-                Web Application
+              <span className="text-2xl font-bold text-[#03010E] tracking-wider text-center">
+                <p>Web Application</p>
+              </span>
+              <span className="font-bold text-[#03010E] tracking-wider text-center">
+                <p>HTML, CSS, JavaScript, Bootstrap and Firebase</p>
               </span>
               <div className="pt-8 text-center">
                 <a href="/">
@@ -40,24 +44,24 @@ const Work = () => {
               </div>
             </div>
           </div>
-          {/* Work 2*/}
+          {/* ICUNSS*/}
           {/* Grid Image*/}
           <div
-            style={{ backgroundImage: `url(${KHFOnlineMenu})` }}
+            style={{ backgroundImage: `url(${ICUNSS})` }}
             className="shadow-md shadow-[#E6E6E6] group container rounded-md flex justify-center items-center mx-auto work-content-div"
           >
             {/* Hover Effect */}
             <div className="opacity-0 group-hover:opacity-100">
-              <span className="text-2xl font-bold text-[#E6E6E6] tracking-wider">
+              <span className="text-2xl font-bold text-[#03010E] tracking-wider">
                 Web Application
               </span>
               <div className="pt-8 text-center">
                 <a href="/">
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Demo
+                    Poster
                   </button>
                 </a>
-                <a href="/">
+                <a href="https://github.com/cutebaby0630/ICUsystem">
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
                     Code
                   </button>
@@ -73,7 +77,7 @@ const Work = () => {
           >
             {/* Hover Effect */}
             <div className="opacity-0 group-hover:opacity-100">
-              <span className="text-2xl font-bold text-[#E6E6E6] tracking-wider">
+              <span className="text-2xl font-bold text-[#03010E] tracking-wider">
                 Web Application
               </span>
               <div className="pt-8 text-center">
