@@ -27,13 +27,6 @@ function App() {
       <Work />
       <ProjectBlog />
       <Contact />
-      {/* 
-      
-       <Routes>
-        <Route path="/pdfreader" component={<PDFReader />} />
-      </Routes>
-      
-      */}
     </div>
   );
 }
