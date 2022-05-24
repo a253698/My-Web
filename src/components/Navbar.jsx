@@ -44,7 +44,7 @@ const Navbar = () => {
           </Link>
         </li>
         <li>
-          <Link to="project&blog" smooth={true} duration={500}>
+          <Link to="projectBlog" smooth={true} duration={500}>
             <a className="text-[#b2fefd]">x. </a>Project & Blog
           </Link>
         </li>
@@ -101,7 +101,7 @@ const Navbar = () => {
           {" "}
           <Link
             onClick={handleClick}
-            to="project&blog"
+            to="projectblog"
             smooth={true}
             duration={500}
           >
