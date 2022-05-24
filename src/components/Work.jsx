@@ -1,6 +1,7 @@
 import React from "react";
 import KHFOnlineMenu from "../assets/KHF-online-menu.png";
 import ICUNSS from "../assets/ICUNS.png";
+import PDFReader from "./PDFReader";
 
 const Work = () => {
   return (
@@ -58,7 +59,9 @@ const Work = () => {
               <div className="pt-8 text-center">
                 <a href="/">
                   <button className="text-center rounded-lg px-4 py-3 m-2 bg-white text-gray-700 font-bold text-lg">
-                    Poster
+                    <a href="/pdfreader" target="_blank">
+                      Project Report
+                    </a>
                   </button>
                 </a>
                 <a href="https://github.com/cutebaby0630/ICUsystem">
